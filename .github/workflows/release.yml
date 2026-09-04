@@ -1,0 +1,23 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: HotkeyShorten
+      - name: Package addon
+        run: zip -r "HotkeyShorten-${GITHUB_REF_NAME#v}.zip" HotkeyShorten -x 'HotkeyShorten/.git/*' 'HotkeyShorten/.github/*'
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: HotkeyShorten-*.zip
+          generate_release_notes: true

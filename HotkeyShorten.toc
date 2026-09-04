@@ -1,0 +1,8 @@
+## Interface: 11509
+## Title: HotkeyShorten
+## Notes: Shortens action-bar hotkey labels: Mouse Button 5 to M5, Mouse Wheel Up/Down to MU/MD, and strips hyphens in modifier binds (s-1 to s1).
+## Author: EinBaum
+## Version: 1.0
+## Category: Action Bars
+
+HotkeyShorten.lua
