@@ -1,6 +1,6 @@
 # HotkeyShorten
 
-WoW Classic Era addon. Shortens action-bar hotkey labels.
+WoW Classic Era and Forever addon. Shortens action-bar hotkey labels.
 
 - Mouse Button 5 → M5
 - Mouse Wheel Up → MU
